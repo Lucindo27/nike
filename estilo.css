@@ -1,0 +1,240 @@
+/* Tudo */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+/* Parte 1 */
+
+.container-header {
+    width: 100%;
+    height: 80px;
+    background-color:rgb(169,169,169);
+    padding: 0 2rem;
+}
+
+.logo {
+    width: 100px;
+    margin-top: -10px;
+}
+
+.head {
+    width: 30px;
+}
+
+.header-itens{
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 95px;
+    margin: 0;
+    padding: 0 25px;
+    display: inline-block;
+}
+
+.header-itens li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+/* Parte 2 */
+
+.main-banner {
+    background-image: url("img/foto.jpg");
+    background-size: cover;
+    padding: 10rem 0;
+}
+
+.main-banner h1,
+.main-banner p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #000 5px 2px 3px;
+}
+
+.product-container {
+    padding: 5rem 0;
+}
+
+.product-container ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product-container li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-container img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.product-container h3 {
+    margin-bottom: 25px;
+}
+
+.product-container p {
+    line-height: 25px;
+}
+
+.name-tenis {
+    margin-bottom: 5px;
+}
+
+.texto-tenis {
+    color: rgb(169,169,169);
+    font-weight: bold;
+}
+
+/* Parte 3 */
+
+.peoples-container {
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.peoples-container h2 {
+    font-size: 36px;
+}
+
+.peoples-container p {
+    font-size: 20px;
+    color: rgb(169,169,169);
+}
+
+.names-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+.person img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.person .name {
+    display: flex;
+    padding-top: 25px;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.person {
+    flex: 1;
+    max-width: 275px;
+    margin: 0 20px;
+}
+
+.person ul {
+    padding: 0;
+}
+
+.person li {
+    list-style: none;
+}
+
+/* Parte 4 */
+
+.membro img{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.botao {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.membro input[type="submit"] {
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #000;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.membro input[type="submit"]:hover{
+    background-color: #757575;
+}
+
+/* Responsividade */
+
+@media (max-width:1100px){
+    .container-header .logo {
+        margin-top: 0px;
+        width: 80px;
+    }    
+
+    .header-itens img {
+        width: 25px;
+    }
+
+    .membro img {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width:900px) {
+    .product-container ul {
+        flex-direction: column;
+    }
+
+    .product-container img {
+        width: 50%;
+    }
+
+    .membro img {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width:700px) {
+    .names-container {
+        flex-direction: column;
+    }
+
+    .names-container img {
+        width: 80%;
+    }
+
+    .person{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .person ul {
+        margin-bottom: 50px;
+    }  
+    
+    .product-container .texto-tenis {
+        font-size: 12px;
+    }
+}
+
+/* Footer */
+
+footer p {
+    padding-top: 30px;
+    text-align: center;
+    color: rgb(169,169,169);
+    font-weight: bold;
+}
